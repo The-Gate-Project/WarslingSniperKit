@@ -1,0 +1,69 @@
+BACKUP ~WarslingSniperKit/backup~
+AUTHOR ~adul@adul.net~
+
+BEGIN ~Warsling Sniper Kit for Fighters~
+
+INCLUDE ~WarslingSniperKit/lib/fl#add_kit_ee.tpa~
+
+ADD_KIT ~A0WS~
+ ~A0WS                 1           1           1           1           1           1           1           1~
+ ~A0WS     1 1 1 1 1 1 1 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 2 2 2 3 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5~
+ ~A0WS                 9       0       0       0       0       0~
+ ~A0WS                 0       0       0       0       0       0~
+ ~A0WS                 17      0       0       0       0       0~
+ ~A0WS                 15      0       0       0       0       0~
+ ~A0WS                 1       1       1       1       1       1       1       1       1~
+ ~A0WS                 0       1       1       1       1       0~
+ ~WarslingSniperKit/A0WS.2da~
+ ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
+ ~0x0000C000    2~
+ ~Fi0~
+ ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 BULL03,40 BULL03,40 BULL03,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 SLNG05~
+ SAY ~warsling sniper~
+ SAY ~Warsling Sniper~
+ SAY ~WARSLING SNIPER: The sling is a difficult weapon to master, but in the hands of a warsling sniper it becomes a precise tool of war. Although slings are commonly associated with and used by the hin, experts of the weapon may indeed come from any race.
+
+Advantages:
+-  +1 bonus to hit and damage with missile weapons at first level and every 4 levels afterward
+-  At 10th level he gains the Improved Ricochet passive ability which allows all fired missiles to bounce off their primary target and hit one additional nearby foe
+
+Disadvantages:
+-  May not specialize in any weapon other than the sling
+-  May not wear armor greater than studded leather
+-  Hit Die: d8~
+
+LAF fl#add_kit_ee
+
+	INT_VAR
+
+		biography = 15888
+
+		briefdesc = 31252
+
+	STR_VAR
+
+		kit_name = ~A0WS~
+
+		hpclass = ~HPMONK~
+
+		clascolr = ~28 93 91 91 93~
+
+END
+
+COPY ~WarslingSniperKit/r/A0WS01.SPL~ ~override~
+COPY ~WarslingSniperKit/r/A0WS02.SPL~ ~override~
+COPY ~WarslingSniperKit/r/A0WS02.EFF~ ~override~
+COPY ~WarslingSniperKit/r/A0WS03.EFF~ ~override~
+ADD_PROJECTILE ~WarslingSniperKit/r/A0WS03.PRO~
+COPY ~WarslingSniperKit/r/A0WS03.SPL~ ~override~
+  WRITE_SHORT 0x098 ~%A0WS03%~
+  WRITE_SHORT 0x0c0 ~%A0WS03%~
+  WRITE_SHORT 0x0e8 ~%A0WS03%~
+  WRITE_SHORT 0x110 ~%A0WS03%~
+  WRITE_SHORT 0x138 ~%A0WS03%~
+  WRITE_SHORT 0x160 ~%A0WS03%~
+  WRITE_SHORT 0x188 ~%A0WS03%~
+  WRITE_SHORT 0x1b0 ~%A0WS03%~
+  WRITE_SHORT 0x1d8 ~%A0WS03%~
+  WRITE_SHORT 0x200 ~%A0WS03%~
+  WRITE_SHORT 0x228 ~%A0WS03%~
