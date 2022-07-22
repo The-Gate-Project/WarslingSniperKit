@@ -1,5 +1,10 @@
 BACKUP ~WarslingSniperKit/backup~
 AUTHOR ~adul@adul.net~
+README ~WarslingSniperKit/readme/Readme.%LANGUAGE%.txt~ ~WarslingSniperKit/readme/Readme.english~
+
+LANGUAGE ~English~ ~english~ ~WarslingSniperKit/tra/english/setup.tra~
+
+LANGUAGE ~Francais~ ~french~ ~WarslingSniperKit/tra/french/setup.tra~
 
 BEGIN ~Warsling Sniper Kit for Fighters~
 
@@ -14,14 +19,14 @@ ADD_KIT ~A0WS~
  ~A0WS                 15      0       0       0       0       0~
  ~A0WS                 1       1       1       1       1       1       1       1       1~
  ~A0WS                 0       1       1       1       1       0~
- ~WarslingSniperKit/A0WS.2da~
+ ~WarslingSniperKit/2da/A0WS.2da~
  ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
  ~0x0000C000    2~
  ~Fi0~
  ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 BULL03,40 BULL03,40 BULL03,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 SLNG05~
- SAY ~warsling sniper~
- SAY ~Warsling Sniper~
- SAY ~WARSLING SNIPER: The sling is a difficult weapon to master, but in the hands of a warsling sniper it becomes a precise tool of war. Although slings are commonly associated with and used by the hin, experts of the weapon may indeed come from any race.
+ SAY @1 /*~warsling sniper~*/
+ SAY @2 /*~Warsling Sniper~*/
+ SAY @3 /*~WARSLING SNIPER: The sling is a difficult weapon to master, but in the hands of a warsling sniper it becomes a precise tool of war. Although slings are commonly associated with and used by the hin, experts of the weapon may indeed come from any race.
 
 Advantages:
 -  +1 bonus to hit and damage with missile weapons at first level and every 4 levels afterward
@@ -30,7 +35,7 @@ Advantages:
 Disadvantages:
 -  May not specialize in any weapon other than the sling
 -  May not wear armor greater than studded leather
--  Hit Die: d8~
+-  Hit Die: d8~*/
 
 LAF fl#add_kit_ee
 

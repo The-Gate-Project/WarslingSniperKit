@@ -1,10 +1,10 @@
 Warsling Sniper Kit
-version 2.1
+version 2.2
 
 by Adam Zsoldos
 
 Playable fighter kit for Baldur's Gate II, Baldur's Gate:
-Enhanced Edition, Baldur's Gate II: EE, and Icewind Dale: EE.
+Enhanced Edition, Baldur's Gate II: EE, Icewind Dale: EE and the Enhanced Edition Trilogy (EET).
 
 
 Description:
@@ -33,7 +33,7 @@ Disadvantages:
 Install:
 --------
 
-Extract archive contents into the Baldur's Gate II install directory
+Extract archive contents into your game directory
 Run Setup-WarslingSniperKit.exe
 Follow the prompt
 
@@ -56,3 +56,11 @@ v2.1:
 - Fixed a bug that caused Improved Ricochet not to work
 - The above fix will not be applied to characters who have already
   reached level 10
+
+v2.2:
+- Traification
+- Add french translation and french readme
+- Uprade fl#add_kit_ee 2014 edition to 2017 edition and thus EET compatibility
+- Uprade weidu to v24900
+- Move file A0WS.2da to 2da folder
+- Move readmes to readme folder and up english readme
