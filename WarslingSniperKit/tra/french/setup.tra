@@ -1,15 +1,15 @@
-@1 = ~frondeur d'Ã©lite~
-@2 = ~Frondeur d'Ã©lite~
-@3 = ~FRONDEUR D'Ã‰LITE : La fronde est difficile Ã  maÃ®triser, mais dans les mains d'un frondeur d'Ã©lite, elle devient une arme de haute prÃ©cision. Bien que les frondes soient communÃ©ment associÃ©es et utilisÃ©es par les petites-personnes, elles sont accessibles Ã  toutes les races.
+@1 = ~frondeur d'élite~
+@2 = ~Frondeur d'élite~
+@3 = ~FRONDEUR D'ÉLITE : La fronde est difficile à maîtriser, mais dans les mains d'un frondeur d'élite, elle devient une arme de haute précision. Bien que les frondes soient communément associées et utilisées par les petites-personnes, elles sont accessibles à toutes les races.
 
-AvantagesÂ :
-- Bonus de 1 au toucher et aux dÃ©gÃ¢ts avec les armes Ã  projectiles dÃ¨s le premier niveau, puis tous les 4 niveaux.
-- Ã€ partir du 10Ã¨me niveau, le Frondeur d'Ã©lite acquiert la capacitÃ© passive Ricochet d'Ã©lite qui permet Ã  tous les projectiles de rebondir sur leur cible et atteindre un nouvel ennemi Ã  proximitÃ©.
+Avantages :
+- Bonus de 1 au toucher et aux dégâts avec les armes à projectiles dès le premier niveau, puis tous les 4 niveaux.
+- À partir du 10ème niveau, le Frondeur d'élite acquiert la capacité passive Ricochet d'élite qui permet à tous les projectiles de rebondir sur leur cible et atteindre un nouvel ennemi à proximité.
 
-InconvÃ©nientsÂ :
-- Ne peut se spÃ©cialiser avec une arme autre que la fronde.
+Inconvénients :
+- Ne peut se spécialiser avec une arme autre que la fronde.
 - Ne peut porter d'armure plus lourde que la besantine.
-â€“ DÃ©s de vieÂ : d8~
+– Dés de vie : d8~
 
 
 /* =============== *

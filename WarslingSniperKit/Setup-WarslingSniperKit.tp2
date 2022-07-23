@@ -1,6 +1,22 @@
 BACKUP ~WarslingSniperKit/backup~
 AUTHOR ~adul@adul.net~
-README ~WarslingSniperKit/readme/Readme.%LANGUAGE%.txt~ ~WarslingSniperKit/readme/Readme.english~
+README ~WarslingSniperKit/readme/Readme.%LANGUAGE%.txt~ ~WarslingSniperKit/readme/Readme.english.txt~
+
+ALWAYS
+	ACTION_DEFINE_ARRAY Ad_reload BEGIN
+	"setup.tra"
+	END
+	ACTION_DEFINE_ARRAY Ad_noconvert BEGIN END
+		LAF HANDLE_CHARSETS
+		INT_VAR
+		infer_charset = 1
+		STR_VAR
+		tra_path = EVAL ~%MOD_FOLDER%/Tra~
+		noconvert_array = Ad_noconvert
+		reload_array = Ad_reload
+	END
+END
+
 
 LANGUAGE ~English~ ~english~ ~WarslingSniperKit/tra/english/setup.tra~
 
