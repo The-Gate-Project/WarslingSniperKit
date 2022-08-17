@@ -3,8 +3,8 @@ version 2.2
 
 by Adam Zsoldos
 
-Playable fighter kit for Baldur's Gate II, Baldur's Gate:
-Enhanced Edition, Baldur's Gate II: EE, Icewind Dale: EE and the Enhanced Edition Trilogy (EET).
+Playable fighter kit for Baldur's Gate II:
+Baldur's Gate: EE, Baldur's Gate II: EE, Icewind Dale: EE and the Enhanced Edition Trilogy (EET).
 
 
 Description:
@@ -64,3 +64,4 @@ v2.2:
 - Uprade weidu to v24900
 - Move file A0WS.2da to 2da folder
 - Move readmes to readme folder and up english readme
+- Add iconv

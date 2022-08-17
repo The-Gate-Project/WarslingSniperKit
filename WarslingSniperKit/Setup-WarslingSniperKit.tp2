@@ -22,7 +22,7 @@ LANGUAGE ~English~ ~english~ ~WarslingSniperKit/tra/english/setup.tra~
 
 LANGUAGE ~Francais~ ~french~ ~WarslingSniperKit/tra/french/setup.tra~
 
-BEGIN ~Warsling Sniper Kit for Fighters~
+BEGIN @0  //Warsling Sniper Kit for Fighters
 
 INCLUDE ~WarslingSniperKit/lib/fl#add_kit_ee.tpa~
 

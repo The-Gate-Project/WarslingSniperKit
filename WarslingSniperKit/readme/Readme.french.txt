@@ -55,3 +55,4 @@ v2.2:
 - Uprade weidu to v24900
 - Move file A0WS.2da to 2da folder
 - Move readmes to readme folder and up english readme
+- Add iconv
