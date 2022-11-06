@@ -24,25 +24,14 @@ LANGUAGE ~Francais~ ~french~ ~WarslingSniperKit/tra/french/setup.tra~
 
 BEGIN @0  //Warsling Sniper Kit for Fighters
 
-INCLUDE ~WarslingSniperKit/lib/fl#add_kit_ee.tpa~
+INCLUDE ~WarslingSniperKit/lib/a7#add_kit_ex.tpa~
 
-ADD_KIT ~A0WS~
- ~A0WS                 1           1           1           1           1           1           1           1~
- ~A0WS     1 1 1 1 1 1 1 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
- ~A0WS                 9       0       0       0       0       0~
- ~A0WS                 0       0       0       0       0       0~
- ~A0WS                 17      0       0       0       0       0~
- ~A0WS                 15      0       0       0       0       0~
- ~A0WS                 1       1       1       1       1       1       1       1       1~
- ~A0WS                 0       1       1       1       1       0~
- ~WarslingSniperKit/2da/A0WS.2da~
- ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
- ~0x0000C000    2~
- ~Fi0~
- ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 BULL03,40 BULL03,40 BULL03,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 SLNG05~
- SAY @1 /*~warsling sniper~*/
- SAY @2 /*~Warsling Sniper~*/
- SAY @3 /*~WARSLING SNIPER: The sling is a difficult weapon to master, but in the hands of a warsling sniper it becomes a precise tool of war. Although slings are commonly associated with and used by the hin, experts of the weapon may indeed come from any race.
+LAF ADD_KIT_EX
+INT_VAR
+  kit_class = 2
+  lower     = RESOLVE_STR_REF(@1) /*~warsling sniper~*/
+  mixed     = RESOLVE_STR_REF(@2) /*~Warsling Sniper~*/
+  help      = RESOLVE_STR_REF(@3) /*~WARSLING SNIPER: The sling is a difficult weapon to master, but in the hands of a warsling sniper it becomes a precise tool of war. Although slings are commonly associated with and used by the hin, experts of the weapon may indeed come from any race.
 
 Advantages:
 -  +1 bonus to hit and damage with missile weapons at first level and every 4 levels afterward
@@ -52,23 +41,27 @@ Disadvantages:
 -  May not specialize in any weapon other than the sling
 -  May not wear armor greater than studded leather
 -  Hit Die: d8~*/
-
-LAF fl#add_kit_ee
-
-	INT_VAR
-
-		biography = 15888
-
-		briefdesc = 31252
-
-	STR_VAR
-
-		kit_name = ~A0WS~
-
-		hpclass = ~HPMONK~
-
-		clascolr = ~28 93 91 91 93~
-
+STR_VAR
+  kit_name  = ~A0WS~
+  unusable  = ~0x0000C000~
+  hpclass = ~HPMONK~
+  briefdesc = 31252
+  biography = 15888
+  clascolr = ~28 93 91 91 93~
+  clasweap  = ~1           1           1           1           1           1           1           1~
+  weapprof  = ~1 1 1 1 1 1 1 5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  abclasrq  = ~9       0       0       0       0       0~
+  abclsmod  = ~0       0       0       0       0       0~
+  abdcdsrq  = ~17      0       0       0       0       0~
+  abdcscrq  = ~15      0       0       0       0       0~
+  alignmnt  = ~1       1       1       1       1       1       1       1       1~
+  dualclas  = ~0       1       1       1       1       0~
+  clab_path = EVAL ~%MOD_FOLDER%/2da/A0WS.2da~
+  kittable  = ~K_F_H K_F_D K_F_G K_F_E K_F_HE K_F_HL K_F_HO~
+  luabbr    = ~Fi0~
+  stweap    = ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 BULL03,40 BULL03,40 BULL03,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 SLNG05~
+RET
+  kit_id
 END
 
 COPY ~WarslingSniperKit/r/A0WS01.SPL~ ~override~
